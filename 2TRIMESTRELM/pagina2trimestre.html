@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0\css\font-awesome.min.css">
+	<style>
+		
+
+
+		body {font-size: 100%; max-width: 100%; margin: 0px;}
+		
+
+
+		header {height: 12%; position: fixed; background-color: #fff; width: 100%; z-index: 7;}
+		
+
+
+
+		.menu1 {margin-left: 250px; margin-bottom: 30px; margin-top: 30px; font-size: 12px; font-family: arial;}
+		
+
+
+		/*MENÚ DESPEGABLE DESTINATION*/
+
+		#menudedespegable1:hover{cursor: pointer;}
+
+		#menudespegable1:hover #menudespegable2{ display: block; cursor: pointer;
+
+		}
+
+		#menudespegable2{ display: none; position: absolute; bottom: -90%; background-color: #f9f9f9; min-width: 160px; 
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); padding: 12px 16px; z-index: 1; display: none; padding-top: 30px; 
+			padding-bottom: 30px; border-radius: 2px; left: 350px;}
+
+		#menudespegable2:hover{cursor: pointer; display: block;}
+
+		ul {list-style-type: none;}
+		
+
+
+		li {display: inline; margin-left: 30px;}
+		
+		
+		
+
+
+		
+
+		#divcontenedor1{ max-width: 100%; background-image: url( "imagenes/sierranevada.jpg"); background-size: cover; height: 800px;}
+		
+
+		
+
+		
+		 #imagenrosa{margin-left: 25%; margin-top: 15%;}
+
+
+
+
+		
+		 h1{color: #fff; font-size: 80px;  font-family: arial; text-align: center; position: relative; z-index: 5; top: -350px; } 
+		
+
+
+
+
+
+
+		a:link , a:visited{
+			text-decoration:none; color: #4f5260; max-width: }
+		
+
+
+
+
+
+		a:hover{color: #ff4870; pointer-events: hand;}
+		
+
+
+		
+		
+
+		#textopeque1{position: relative; color: #fff; font-size: 12px; z-index: 6; font-family: arial; text-align: center; top: -315px;}
+		
+
+
+
+		#textopeque2{position: relative; color: #fff; font-size: 24px; z-index: 6; font-style: oblique; font-family: arial; top: -380px; text-align: center;} 
+		
+
+		
+	
+
+	/*SEGUNDO CONTENEDOR*/
+ 		
+
+
+ 		
+
+ 		#divcontenedor2{height: 850px; margin-top: 12%; max-width: 100%; background-image: url( "imagenes/montaña2.jpg"); background-size: cover;}
+		
+
+
+		#debajoimagensierranevada{color: #4f5260; font-size: 12px; font-family: arial; text-align: center;}
+		
+
+
+
+		.linearoja{margin-top: 1%; text-align: center; padding-bottom: 7%;}
+		
+
+		
+		#imagenmontaña{width: 550px; height: 400px; float: right; margin-right: 3%; max-width: 100%;}
+
+
+
+		#tituloscandinavia{color: #292c3d; font-size: 42px; font-weight: 300; margin-left: 3%; padding-top: 8%;}
+
+
+
+		#titulodebajoscandinavia{font-size: 20px; color: #ff4870; font-weight: normal; margin-left: 3%; padding-top: 1%; padding-bottom: 5%;}
+
+
+
+
+		#textoescandinavia{font-family: arial; letter-spacing: 0; font-size: 15px; font-weight: normal; color: #4f5260; margin-right: 50%; margin-left: 3%;}
+
+
+
+
+		#botonexploremore{color: #ff4870;  margin-top: 7%; margin-left: 40%; font-size: 13px; font-weight: bold; font-family: arial; 
+			background-color: transparent; border: 1px solid #ff4870; padding: 20px 60px;display: inline-block;cursor: pointer;border-radius: 30%;}
+		
+		
+
+
+		#botonexploremore:hover{transition-duration: 0.2s; box-shadow: 1px 1px 1px #999; border-color: #EA2427; color: #EA2427 ; }
+
+
+
+
+
+
+
+		/*TERCER CONTENEDOR*/
+
+
+
+
+		#divcontenedor3{height: 600px; background-color: #fff; background-image: url(url("imagenes/imagengrumitos.png"); }
+
+
+
+		#textodebajofondocontenedor3{color: #4f5260; font-size: 12px; font-family: arial; text-align: center; margin-top: 24%;}
+
+
+
+
+		/*PRIMERA IMAGEN EMPEZANDO POR ARRIBA A LA IZQUIERDA*/
+
+		#divimagenpequeña1{ margin-left: 5%;}
+
+		
+		#imagenpequeña1{border-radius: 2px; width: 110px; float: left; margin-right: 2%; max-width: 100%; padding-bottom: 2%; border-bottom: 1px solid #90929d; }
+
+
+		#tituloimagenpequeña1{color: #292c3d; font-size: 12px; font-weight: bold; font-family: arial; padding-top: 1%; float: left;}
+
+		#comentarioimagenpequeña1{color: #90929d; font-family: arial; font-weight: normal; padding-top: 13%; font-style: oblique; padding-bottom: 2%;}
+
+
+		/*SEGUNDA IMAGEN EMPEZANDO POR ARRIBA A LA IZQUIERDA*/
+		
+
+		#imagenpequeña2{border-radius: 2px; width: 110px; float: left; padding-left: 14%; margin-right: 2%; max-width: 100%; padding-bottom: 2%;
+		 border-bottom: 1px solid #90929d; }
+
+		#tituloimagenpequeña2{color: #292c3d; font-size: 12px; font-weight: bold; font-family: arial; padding-top: 1%; float: left;}
+
+		#comentarioimagenpequeña2{color: #90929d; font-family: arial; font-weight: normal; padding-top: 13%; font-style: oblique; padding-bottom: 2%;}
+
+
+
+		/*TERCERA IMAGEN EMPEZANDO POR ARRIBA A LA IZQUIERDA*/
+
+
+		#imagenpequeña3{border-radius: 2px; width: 110px;  padding-left: 14%;  max-width: 100%; padding-bottom: 2%;
+		 border-bottom: 1px solid #90929d; }
+
+		#tituloimagenpequeña3{color: #292c3d; font-size: 12px; font-weight: bold; font-family: arial; padding-top: 1%; float: right;padding-right: 14%; } 
+
+		#comentarioimagenpequeña3{color: #90929d; font-family: arial; font-weight: normal; padding-top: 13%; font-style: oblique; padding-bottom: 2%;}
+
+
+
+
+		/*PRIMERA IMAGEN EMPEZANDO POR EN MEDIO A LA IZQUIERDA*/
+
+
+		#divimagenpequeña4{margin-top: 1%; }
+
+		#imagenpequeña4{border-radius: 2px; width: 110px; float: left; margin-right: 2%; max-width: 100%; padding-bottom: 2%;
+		 border-bottom: 1px solid #90929d;}
+
+		#tituloimagenpequeña4{color: #292c3d; font-size: 12px; font-weight: bold; font-family: arial; padding-top: 1%; float: left; }
+
+		#comentarioimagenpequeña4{color: #90929d; font-family: arial; font-weight: normal; padding-top: 13%; font-style: oblique; padding-bottom: 2%;}
+
+
+
+		/*SEGUNDA IMAGEN EMPEZANDO POR EN MEDIO A LA IZQUIERDA*/
+		
+
+		#imagenpequeña5{border-radius: 2px; width: 110px; float: left; padding-left: 16%; margin-right: 2%; max-width: 100%; padding-bottom: 2%;
+		 border-bottom: 1px solid #90929d; }
+
+		#tituloimagenpequeña5{color: #292c3d; font-size: 12px; font-weight: bold; font-family: arial; padding-top: 1%; float: left;}
+
+		#comentarioimagenpequeña5{color: #90929d; font-family: arial; font-weight: normal; padding-top: 13%; font-style: oblique; padding-bottom: 2%;}
+
+
+
+
+		/*TERCERA IMAGEN EMPEZANDO POR EN MEDIO A LA IZQUIERDA*/
+		
+
+		#imagenpequeña6{border-radius: 2px; width: 110px; float: left; padding-left: 11%; margin-right: 2%; max-width: 100%; padding-bottom: 2%;
+		 border-bottom: 1px solid #90929d; }
+
+		#tituloimagenpequeña6{color: #292c3d; font-size: 12px; font-weight: bold; font-family: arial; padding-top: 1%; float: left;}
+
+		#comentarioimagenpequeña6{color: #90929d; font-family: arial; font-weight: normal; padding-top: 13%; font-style: oblique; padding-bottom: 2%;}
+
+
+
+
+
+
+		/*PRIMERA IMAGEN EMPEZANDO POR ABAJO A LA IZQUIERDA*/
+
+
+		#divimagenpequeña7{margin-top: 10%; }
+
+		#imagenpequeña7{border-radius: 2px; width: 110px; float: left; margin-right: 2%; max-width: 100%; padding-bottom: 2%;
+		 border-bottom: 1px solid #90929d;}
+
+		#tituloimagenpequeña7{color: #292c3d; font-size: 12px; font-weight: bold; font-family: arial; padding-top: 1%; float: left; }
+
+		#comentarioimagenpequeña7{color: #90929d; font-family: arial; font-weight: normal; padding-top: 13%; font-style: oblique; padding-bottom: 2%;}
+
+
+
+
+		/*SEGUNDA IMAGEN EMPEZANDO POR ABAJO A LA IZQUIERDA*/
+		
+
+		#imagenpequeña8{border-radius: 2px; width: 110px; float: left; padding-left: 14.68%; margin-right: 2%; max-width: 100%; padding-bottom: 2%;
+		 border-bottom: 1px solid #90929d; }
+
+		#tituloimagenpequeña8{color: #292c3d; font-size: 12px; font-weight: bold; font-family: arial; padding-top: 1%; float: left;}
+
+		#comentarioimagenpequeña8{color: #90929d; font-family: arial; font-weight: normal; padding-top: 13%; font-style: oblique; padding-bottom: 2%;}
+
+
+
+
+		/*TERCERA IMAGEN EMPEZANDO POR EN ABAJO A LA IZQUIERDA*/
+		
+
+		#imagenpequeña9{border-radius: 2px; width: 110px; float: left; padding-left: 13%; margin-right: 2%; max-width: 100%; padding-bottom: 2%;
+		 border-bottom: 1px solid #90929d; }
+
+		#tituloimagenpequeña9{color: #292c3d; font-size: 12px; font-weight: bold; font-family: arial; padding-top: 1%; float: left;}
+
+		#comentarioimagenpequeña9{color: #90929d; font-family: arial; font-weight: normal; padding-top: 13%; font-style: oblique; padding-bottom: 2%;}
+
+
+
+
+
+
+		/*CUARTO CONTENEDOR*/
+
+
+		#divcontenedor4{height: 1000px; background-color: #F9FFFF; background-image: url("imagenes/imagenrara.png");}
+
+
+		#textodebajofondocontenedor4{color: #4f5260; font-size: 12px; font-family: arial; margin-top: 38%; padding-bottom: 2%; border-bottom: 2px solid #ff4870;
+			width: 18%;}
+
+		/*PRIMERA IMAGEN*/
+
+		#divprimeraimagencontenedor4{background-size: cover; max-width: 100%;  margin-top: 2%;}
+
+
+
+		#primeraimagencontenedor4{height: 45%; width: 30%; border-radius: 2px; float:left;}
+ 
+
+		/*SEGUNDA IMAGEN*/
+
+		
+		#divsegundaimagencontenedor4{background-size: cover; max-width: 100%; }
+
+
+		#segundaimagencontenedor4{height: 45%; width: 33%; border-radius: 2px; }
+
+
+
+		#titulosegundaimagencontenedor4{color: #292c3d; font-size: 12px; font-weight: bold; font-family: arial; padding-top: 1%; float: right; position: relative; left: -670px; z-index: 5; font-size: 15px; top: 70px;}
+
+
+		#titulopequeñosegundaimagencontenedor4{position: relative; z-index: 5; top: -340px; left: 440px; font-weight: normal; color: #292c3d; font-style: oblique;}
+
+
+		#textodescriptivo{font-family: arial; letter-spacing: 0; font-size: 15px; font-weight: normal; color: #4f5260; margin-right: 69%; margin-left: 3%; 
+			position: relative; top: -300px;  left: 370px;}
+
+
+
+		/*TERCERA IMAGEN*/
+
+		#divterceraimagencontenedor4{background-size: cover; max-width: 100%;}
+
+
+		#terceraimagencontenedor4{width: 31%; height: 20%;}
+
+
+
+
+
+
+
+</style>
+
+
+	<title>Home</title>
+
+
+</head>
+
+
+<body>
+
+<header>
+
+	</div>
+	
+
+
+
+				<div class="menu1">
+						
+						<ul>
+							<li> <strong> <a href="#"> HOME </a></li>
+							<li id="menudespegable1"> <strong> <a href = "#"> DESTINATIONS </a> </strong> 
+							<ul id="menudespegable2">
+								<li> NEW ZEALAND</li>
+							</ul>
+							</li>
+							<li> <strong> <a href = "#"> ABOUT </a> </strong> </li>
+							<li> <strong> <a href = "#"> <img src = "imagenes/logopagina2trimestre.svg"/>  </a> </strong> </li>
+							<li> <strong> <a href = "#"> RESOURCES </a> </strong> </li>
+							<li> <strong> <a href="#"> STORIES </a> </strong> </li>
+							<li> <strong> <a href="#"> ZOO </a> </strong> </li>
+						</ul>
+				</div>	
+
+			</header>
+					
+
+
+				<div id="divcontenedor1">
+							<div>
+									<img id="imagenrosa" src = "imagenes/fondorosa.png"/>
+									<div id="textopeque1"><strong>ADVENTURE & TRAVELING </strong></div>
+									<h1>FOLLOW FJORD</h1>
+									<div id="textopeque2">explore – experience – remember</div>	
+							</div>
+				</div>
+				
+			
+
+
+			<div id="divcontenedor2"> 
+						<div id="debajoimagensierranevada">FEATURED DESTINATION</div>
+						<div class="linearoja"> <img src = "imagenes/linearoja.svg"/> </div>
+						  <div id="divimagenmontaña"> <img id= "imagenmontaña" src="imagenes/montaña.jpg" </div> <div id="tituloscandinavia"> Scandinavia</div> 	<div id="titulodebajoscandinavia">Norway, Sweden, Denmark</div>
+						  <div id="textoescandinavia">Velit ut, risus erat urna, mollis nulla fringilla blandit viverra consequat, erat lorem lectus, ipsum blandit. Consectetuer nec ligula pretium quaerat, nonummy turpis  deleniti a quisque nullam massa. Nam nulla eget nec suspendisse vitae, eget tortor, ante lectus feugiat vestibulum eu lacus elit, volutpat pharetra fusce. Sed sociis explicabo nulla vestibulum facilisis lacinia. </div>  
+						<div id = "botonexploremore"> EXPLORE MORE </div> 
+			</div>
+
+
+			<div id="divcontenedor3">
+						<div id="textodebajofondocontenedor3"> BEST PLACES IN SCANDINAVIA </div>
+						<div class="linearoja"> <img src = "imagenes/linearoja.svg"/> </div>
+						
+
+						<div id="divimagenpequeña1">  <img id = "imagenpequeña1" src="imagenes/imagenpequeña1.jpg" </div> <div id="tituloimagenpequeña1"> MOLDE 
+							<div id="comentarioimagenpequeña1"> Norwegian east coast </div>
+						</div> 
+						
+
+
+						<div id="#divimagenpequeña2">  <img id="imagenpequeña2" src="imagenes/imagenpequeña2.jpg" </div>  
+						<div id="tituloimagenpequeña2"> TRONDHEIM <div id="comentarioimagenpequeña2"> Central Norway </div>
+						</div> 
+
+
+						<div id="divimagenpequeña3"></div> <img id="imagenpequeña3" src="imagenes/imagenpequeña3.jpg" </div>
+						<div id="tituloimagenpequeña3"> HARSTAD <div id="comentarioimagenpequeña3">Norwegian north coast</div>
+						</div>
+
+		
+
+						<div id="divimagenpequeña4"></div> <img id = "imagenpequeña4" src="imagenes/imagenpequeña4.jpg"  </div> 
+						<div id="tituloimagenpequeña4"> KARLSTAD <div id="comentarioimagenpequeña5">Central Sweden</div>
+						</div>
+
+			
+
+						<div id="divimagenpequeña5"></div> <img id = "imagenpequeña5" src="imagenes/imagenpequeña5.jpg"  </div> 
+						<div id="tituloimagenpequeña5"> SUNDSVALL <div id="comentarioimagenpequeña5">Coastal area of Sweden</div>
+						</div>
+
+			
+						<div id="divimagenpequeña6"></div> <img id = "imagenpequeña6" src="imagenes/imagenpequeña6.jpg"  </div> 
+						<div id="tituloimagenpequeña6"> HUDIKSVALL <div id="comentarioimagenpequeña6">Swedish west coast</div>
+						</div>
+
+
+
+						<div id="divimagenpequeña7"></div> <img id = "imagenpequeña7" src="imagenes/imagenpequeña7.jpg"  </div> 
+						<div id="tituloimagenpequeña7"> FISKETANGEN <div id="comentarioimagenpequeña7">Swedish west coast</div>
+						</div>
+
+
+						<div id="divimagenpequeña8"></div> <img id = "imagenpequeña8" src="imagenes/imagenpequeña8.jpg"  </div> 
+						<div id="tituloimagenpequeña8"> SKAGEN <div id="comentarioimagenpequeña8">Northern Denmark</div>
+						</div>
+			
+
+
+						<div id="divimagenpequeña9"></div> <img id = "imagenpequeña9" src="imagenes/imagenpequeña9.jpg"  </div> 
+						<div id="tituloimagenpequeña9"> KLATTRUP <div id="comentarioimagenpequeña9">Danish west coast</div>
+						</div>
+
+
+			</div>
+
+
+
+
+			<div id="divcontenedor4">
+				
+					<div id="textodebajofondocontenedor4">MORE TRIPS AROUND THE GLOBE </div>
+
+					<div id="divprimeraimagencontenedor4"></div> <img id="primeraimagencontenedor4" src="imagenes/primeraimagencontenedor4.jpg">
+					 <div id="divsegundaimagencontenedor4"> </div>  <img id = "segundaimagencontenedor4" src="imagenes/fondoblanco.png">
+				 
+					<div id="titulosegundaimagencontenedor4"> Exploring the Irish coast</div>
+					<div id="titulopequeñosegundaimagencontenedor4"> Catalina Pontera</div>
+					<div id="textodescriptivo"> Lorem ipsum dolor sit amet, amet lectus. Posuere amet in mauris nec ipsum, suscipit etiam ac risus aliquam semper. Quam taciti, ut ac metus porta leo quisquam tortor, morbi blandit nonummy  ad cras vestibulum, quam dolor gravida ipsum venenatis. Ante praesent non leo mi dolor pellentesque tinciduntt </div>
+			
+					<div id="divterceraimagencontenedor4"> </div> <img id="terceraimagencontenedor4" src="imagenes/segundaimagencontenedor4.jpg">
+
+
+
+
+
+
+			</div>
+
+
+			<div id="divcontenedor5">
+
+				<div id="textodebajofondocontenedor4">NOW IN THE STORE </div>
+				<div id="alaizquierdadelaimagen"> <div id="parte1"> New Maps & Routes Lorem ipsum dolor sit amet, velit est pretium mattis blandit arcu dui, ac lorem odio purus ullamcorper fringilla interdum, lectus metus quisque amet vitae.</div> <div id="parte2"> Best Gear for Coastal Areas Morbi justo. Velit pellentesque blandit. Tincidunt quam et pellentesque ut eleifend. Porta laborum ut dictumst ornare, vel pede blandit id, urna occaecati.
+				</div> </div>
+
+				<div id="divimagencontenedr5"></div>
+				<div id="aladerechadelaimagen"> <div id="parte3"> Brand new Travel Locations Aenean nec, dui in, felis est elit enim, magna nibh. A varius nunc nunc diam, erat tempus vulputate, turpis ante sapien vivamus nulla nibh, ac sit. </div> <div id="parte4">Guides for Food & Hotels Tellus eros orci sed. Et ac convallis adipiscing facilisi euismod faucibus, nulla leo id pretium, nulla blandit dui rutrum ut, amet dui dolor. </div>
+				 </div>
+
+
+			<div id="divxontenedor6"></div>
+				
+				<div id="ourpartnesandfriends"> <p> OUR PARNETS AND FRIENDS </p> </div>
+				<div id="rationalgeographic"> <img id="imagenrationalgegraphic" src="#"> </div>
+				<div id="watrerproof"> <img id="imagenwaterproof" src="#"> </div>
+				<div id="locateme"> <img id="imagenlocateme" src="#"> </div>
+
+				<div id="textonegritacontenedor6"> <strong>DO YOU LOVE TRAVEL?</strong></div>
+
+				<div id="debajotextonegritacontenedor6"> <strong>So, you have a passion for photography, experiencing new cultures and would like to share it with the world? Join us and become a writer for Fjord.</strong></div>
+
+				<div id = "botonjoinourteam"> 	JOIN OUR TEAM </div> 
+
+				<div id="logotwitter"> <img id="imagenlogotwitter" src="#"> </div>
+
+				<div id="logofacebook"> <img id="imagenlogofacebook" src="#"> </div>
+
+				<div id="logogoogle"> <img id="imagenlogogogle" src="#"> </div>
+
+
+			<div id="divcontenedor7"></div>
+
+				<div id="imagenlogo"> <img src= "imagenes/logopagina2trimestre.svg"> </div>
+
+				<div id="divdebajodelogo"> <p>Created with YOOtheme Pro</p></div>
+
+
+</html>
+
